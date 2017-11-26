@@ -3,7 +3,7 @@ defmodule AbaAPI.Mixfile do
 
   def project do
     [
-      app: :aba,
+      app: :aba_api,
       name: "AbaAPI",
       description: "AbaAPI is an Elixir wrapper for the HOTS API (https://hotsapi.net/).",
       version: "0.1.0",
