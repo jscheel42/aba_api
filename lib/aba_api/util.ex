@@ -49,7 +49,11 @@ defmodule AbaAPI.Util do
     { :ok, Poison.Parser.parse!(body) }
   end
 
-  def handle_response(%{status_code: _, body: body}) do
-    { :error, Poison.Parser.parse!(body) }
+  def handle_response(%{status_code: status_code, body: body}) do
+    { :error, %{status_code: status_code, body: body} }
   end
+
+  # def handle_response(%{status_code: _, body: body}) do
+  #   { :error, Poison.Parser.parse!(body) }
+  # end
 end
