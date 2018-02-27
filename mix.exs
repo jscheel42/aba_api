@@ -4,13 +4,14 @@ defmodule AbaAPI.Mixfile do
   def project do
     [
       app: :aba_api,
+      version: "1.0.0",
       name: "AbaAPI",
       description: "AbaAPI is an Elixir wrapper for the HOTS API (https://hotsapi.net/).",
-      version: "0.1.0",
-      elixir: "~> 1.5",
+      elixir: "~> 1.6",
       start_permanent: Mix.env == :prod,
       deps: deps(),
-      docs: docs()
+      docs: docs(),
+      package: package()
     ]
   end
 
