@@ -25,7 +25,7 @@ defmodule AbaAPI.Mixfile do
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-      { :ex_doc,      "~> 0.18.1", only: :dev },
+      { :ex_doc,      "~> 0.18",   only: :dev },
       { :httpoison,   "~> 0.13"               },
       { :poison,      "~> 3.1"                }
     ]
