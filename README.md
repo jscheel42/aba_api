@@ -2,7 +2,7 @@
 
 # AbaAPI
 
-[Documentation] 
+[Documentation]<br />
 [Package (hex.pm)]
 
 ## Installation
