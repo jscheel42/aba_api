@@ -9,7 +9,8 @@ defmodule AbaAPI.Mixfile do
       version: "0.1.0",
       elixir: "~> 1.5",
       start_permanent: Mix.env == :prod,
-      deps: deps()
+      deps: deps(),
+      docs: docs()
     ]
   end
 
@@ -26,6 +27,23 @@ defmodule AbaAPI.Mixfile do
       { :ex_doc,      "~> 0.18.1", only: :dev },
       { :httpoison,   "~> 0.13"               },
       { :poison,      "~> 3.1"                }
+    ]
+  end
+
+  defp docs do
+    [
+      main: "AbaAPI",
+      extras: ["README.md"],
+      output: ["docs"]
+    ]
+  end
+
+  defp package do
+    [
+      licenses: ["MIT"],
+      maintainers: ["Joshua Scheel"],
+      links: %{"Github": "https://github.com/jscheel42/aba_api",
+               "TravisCI": "https://travis-ci.org/jscheel42/aba_api"}
     ]
   end
 end
