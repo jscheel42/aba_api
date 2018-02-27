@@ -1,6 +1,9 @@
+[![Build Status](https://travis-ci.org/jscheel42/aba_api.svg?branch=master)](https://travis-ci.org/jscheel42/aba_api)
+
 # AbaAPI
 
-[AbaAPI Documentation]
+[Documentation]
+[Package (hex.pm)]
 
 ## Installation
 
@@ -12,4 +15,5 @@ def deps do
 end
 ```
 
-[AbaAPI Documentation]:https://hexdocs.pm/aba_api
+[Documentation]:https://hexdocs.pm/aba_api
+[Package (hex.pm)]:https://hex.pm/packages/aba_api
